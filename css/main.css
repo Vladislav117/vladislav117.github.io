@@ -1,0 +1,14 @@
+html {
+    background-color: #194350;
+    color: #d8e3e7;
+    font-family: 'Exo 2', sans-serif;
+}
+
+a {
+    color: #51c4d3;
+}
+
+.head {
+    margin: auto;
+    text-align: center;
+}
