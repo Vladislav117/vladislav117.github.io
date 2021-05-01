@@ -7,6 +7,9 @@
     <!-- Title -->
     <title>Gradient - MTools</title>
 
+    <!-- Tab icon -->
+    <link rel="shortcut icon" href="icons/icon.png" type="image/x-icon">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
@@ -18,6 +21,8 @@
     <link type="text/css" rel="stylesheet" href="css/gradient.css">
 
     <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="../../js/main.js"></script> <!-- This script is needed if you run the site on a local machine -->
 </head>
 <body>
     <!-- Input -->
@@ -30,7 +35,7 @@
         </div>
         <div id="inputColorsContainer" class="input-colors-container">
             <input id="firstColor" class="color-selector" type="color" placeholder="First color" value="#3edbf0">
-            >>>
+            >>
             <input id="secondColor" class="color-selector" type="color" placeholder="Second color" value="#a6f0c6">
         </div>
     </div>
@@ -43,10 +48,13 @@
         <div id="outputNicknameContainer" class="output-nickname-container">
             <input id="result" class="text-input" type="text" readonly>
         </div>
+        <div id="copybuttonContainer" class="copybutton-container">
+            <button id="copyGradient" class="button" onclick="copyFrom('result')">Copy gradient</button>
+        </div>
     </div>
     <!-- Debug -->
     <div id="debug">
-        <button class="button">Hello</button>
+
     </div>
 
     <!-- Scripts -->
