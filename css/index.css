@@ -1,0 +1,56 @@
+.profile {
+    text-align: center;
+    margin: auto;
+}
+
+.avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 32px;
+}
+
+.avatar-container {
+    margin: auto;
+}
+
+.name {
+    font-size: 28px;
+}
+
+.description {
+    margin: auto;
+    width: 50%;
+}
+
+.links {
+    margin: auto;
+}
+
+.social-logo {
+    width: 64px;
+    height: 64px;
+    padding: 6px 6px 6px 6px;
+}
+
+.projects {
+    text-align: center;
+    margin: auto;
+}
+
+.project-logo {
+    width: 256px;
+    height: 256px;
+    border-radius: 32px;
+    padding: 12px 12px 12px 12px;
+}
+
+.other {
+    text-align: center;
+    margin: auto;
+}
+
+.other-logo {
+    width: 128px;
+    height: 128px;
+    padding: 6px 6px 6px 6px;
+}
