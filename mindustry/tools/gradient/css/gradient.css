@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+.copybutton-container, .output-nickname-container, .input-colors-container, .input-text-container {
+    padding: 3px;
+}
+
 .color-selector {
     width: 64px;
     height: 21px;
