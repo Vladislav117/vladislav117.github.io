@@ -14,6 +14,12 @@ a {
     outline-offset: 0;
 }
 
+/* Text */
+.warning-text {
+    color: #fb3640;
+    text-align: center;
+}
+
 /* Classic text input */
 
 .text-input {
