@@ -1,4 +1,4 @@
-let nameContainer = document.getElementById("name");
+let textContainer = document.getElementById("text");
 let firstColorContainer = document.getElementById("firstColor");
 let secondColorContainer = document.getElementById("secondColor");
 let resultContainer = document.getElementById("result");
@@ -24,8 +24,8 @@ function hexToRgb(hex) {
     ] : null;
 }
 
-function makeGradient(nickname, color1, color2) {
-    let length = nickname.length;
+function makeGradient(text, color1, color2) {
+    let length = text.length;
     let delta = [
         Math.floor((color2[0] - color1[0]) / length),
         Math.floor((color2[1] - color1[1]) / length),
@@ -39,10 +39,10 @@ function makeGradient(nickname, color1, color2) {
         }
 
         if (rgbToHex(color1[0], color1[1], color1[2]).indexOf("-") > -1) {
-            result += nickname[i];
+            result += text[i];
         }
         else {
-            result += '[' + rgbToHex(color1[0], color1[1], color1[2]) + ']' + nickname[i];
+            result += '[' + rgbToHex(color1[0], color1[1], color1[2]) + ']' + text[i];
         }
     }
 
@@ -50,10 +50,10 @@ function makeGradient(nickname, color1, color2) {
 }
 
 function update() {
-    let name = nameContainer.value;
+    let text = textContainer.value;
     let firstColor = firstColorContainer.value;
     let secondColor = secondColorContainer.value;
-    resultContainer.value = makeGradient(name, hexToRgb(firstColor), hexToRgb(secondColor));
+    resultContainer.value = makeGradient(text, hexToRgb(firstColor), hexToRgb(secondColor));
 }
 
 window.setInterval(update, 100);

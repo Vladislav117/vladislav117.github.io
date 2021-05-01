@@ -13,21 +13,40 @@
 
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../css/main.css"> <!-- This style is needed if you run the site on a local machine -->
+
+    <link type="text/css" rel="stylesheet" href="css/gradient.css">
 
     <!-- Scripts -->
 </head>
 <body>
     <!-- Input -->
-    <input id="name" type="text" placeholder="Your nickname" value="abc">
-    <input id="firstColor" type="color" placeholder="First color">
-    <input id="secondColor" type="color" placeholder="Second color">
+    <div id="inputContainer" class="input-container">
+        <p>
+            Input text and select colors:
+        </p>
+        <div id="inputTextContainer" class="input-text-container">
+            <input id="text" class="text-input" type="text">
+        </div>
+        <div id="inputColorsContainer" class="input-colors-container">
+            <input id="firstColor" class="color-selector" type="color" placeholder="First color" value="#3edbf0">
+            >>>
+            <input id="secondColor" class="color-selector" type="color" placeholder="Second color" value="#a6f0c6">
+        </div>
+    </div>
 
     <!-- Output -->
-    <input id="result" type="text" readonly>
-
+    <div id="outputContainer" class="output-container">
+        <p>
+            Gradient:
+        </p>
+        <div id="outputNicknameContainer" class="output-nickname-container">
+            <input id="result" class="text-input" type="text" readonly>
+        </div>
+    </div>
     <!-- Debug -->
     <div id="debug">
-
+        <button class="button">Hello</button>
     </div>
 
     <!-- Scripts -->

@@ -2,8 +2,58 @@ html {
     background-color: #393e46;
     color: #eeeeee;
     font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
 }
 
 a {
     color: #00adb5;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Classic text input */
+
+.text-input {
+    width: 192px;
+    height: 21px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #7c7c7c;
+    color: #eeeeee;
+    background: #575a60;
+    border-radius: 8px;
+}
+
+.text-input:hover {
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #808080;
+    color: #eeeeee;
+    background: #616469;
+    border-radius: 8px;
+}
+
+.text-input:focus {
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #989898;
+    color: #eeeeee;
+    background: #7e7e83;
+    border-radius: 8px;
+}
+
+/*  */
+.button {
+    width: 192px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #67707d;
+    color: #eeeeee;
+    background: #525965;
+    border-radius: 14px;
 }
